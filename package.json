@@ -1,0 +1,23 @@
+{
+  "name": "psychotherapy",
+  "version": "1.0.0",
+  "description": "Landing page for psychotherapy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kkinod/My-webpage.git"
+  },
+  "keywords": [
+    "psychotherapy",
+    "therapy"
+  ],
+  "author": "Kkinod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kkinod/My-webpage/issues"
+  },
+  "homepage": "https://github.com/Kkinod/My-webpage#readme"
+}
