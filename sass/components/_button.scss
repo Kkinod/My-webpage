@@ -3,6 +3,7 @@
 	&::after {
 		content: '\27F6';
 		color: var(--color-primary);
+		margin-left: 0.5rem;
 	}
 
 	&:hover::after {
