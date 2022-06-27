@@ -7,11 +7,15 @@
 		width: 65%;
 		border-radius: 1rem;
 		box-shadow: 0 1.5rem 4rem rgba(var(--color-black-rgb), 0.4);
-		transition: 0.2s;
+		transition: 0.5s;
 
 		&--p1 {
-			left: -5rem;
+			left: 0rem;
 			top: -2rem;
+
+            &:hover {
+                transform: scale(1.5)
+            }
 		}
 
 		&--p2 {
@@ -20,18 +24,19 @@
 		}
 
 		&--p3 {
-			left: 5%;
+			left: 10%;
 			top: 15rem;
 		}
 
 		&:hover {
 			z-index: 20;
-			transform: scale(1.05) translateY(-.5rem);
+			transform: scale(1.05) translateY(-0.5rem);
 			box-shadow: 0 2.5rem 4rem rgba(var(--color-black-rgb), 0.5);
 		}
 	}
 
-    &:hover &__photo:not(:hover) {
-        transform: scale(0.9);
-    }
+	&:hover &__photo:not(:hover) {
+		transform: scale(0.9);
+	}
+
 }

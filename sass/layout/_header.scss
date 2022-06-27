@@ -29,20 +29,20 @@
 
 		&--main {
 			display: block;
-			font-size: 4rem;
-			font-weight: 400;
+			font-size: 2rem;
+			font-weight: 700;
 			text-transform: uppercase;
-			letter-spacing: 2rem;
-
+			// letter-spacing: 2rem;
+			color: var(--color-secondary);
 			animation: moveInLeft 1s;
 		}
 
 		&--second {
 			display: block;
-			font-size: 2rem;
-			font-weight: 700;
+			font-size: 4rem;
+			font-weight: 400;
 			text-transform: capitalize;
-			letter-spacing: 1.5rem;
+			// letter-spacing: 1.5rem;
 
 			animation: moveInRight 1s;
 		}
