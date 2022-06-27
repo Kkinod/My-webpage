@@ -1,10 +1,12 @@
 :root {
   --color-primary: #c5a47e;
   --color-secondary: #b58b5b;
+  --color-primary-light: rgb(226, 213, 197);
+  --color-primary-dark: rgba(197, 164, 126, 0.438);
+  --color-secondary-rgb: 181, 139, 91;
+  --color-secondary-dark-rgb: 146, 112, 72;
   --color-white: #fff;
   --color-red-light: #c20f45;
-  --color-primary-light: #7ed56f;
-  --color-primary-dark: #28b485;
   --color-secondary-light: #ffb900;
   --color-secondary-dark: #ff7730;
   --color-tertiary-light: #2998ff;
@@ -164,9 +166,14 @@ body {
   margin-bottom: 8rem;
 }
 
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+
 .btn-text::after {
   content: '\27F6';
   color: var(--color-primary);
+  margin-left: 0.5rem;
 }
 
 .btn-text:hover::after {
@@ -353,6 +360,164 @@ body {
   cursor: pointer;
 }
 
+.card-tours {
+  position: relative;
+  height: 52rem;
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+}
+
+.card-tours__side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(var(--color-black-rgb), 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(var(--color-black-rgb), 0.15);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  overflow: hidden;
+}
+
+.card-tours__side--front {
+  background-color: var(--color-white);
+}
+
+.card-tours__side--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-tours__side--back-1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-primary-light)), to(var(--color-primary-dark)));
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+}
+
+.card-tours__side--back-2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-primary-light)), to(var(--color-primary-dark)));
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+}
+
+.card-tours__side--back-3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-primary-light)), to(var(--color-primary-dark)));
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+}
+
+.card-tours:hover .card-tours__side--front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card-tours:hover .card-tours__side--back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.card-tours__picture {
+  height: 23rem;
+  background-size: cover;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(100% 0, 100% 69%, 0 100%, 0 31%);
+          clip-path: polygon(100% 0, 100% 69%, 0 100%, 0 31%);
+}
+
+.card-tours__picture--1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-primary-light)), to(var(--color-primary-dark))), url(/img/Builders-small.jpg);
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(/img/Builders-small.jpg);
+}
+
+.card-tours__picture--2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-primary-light)), to(var(--color-primary-dark))), url(/img/Company-small.jpg);
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(/img/Company-small.jpg);
+}
+
+.card-tours__picture--3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-primary-light)), to(var(--color-primary-dark))), url(/img/House-small.jpg);
+  background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)), url(/img/House-small.jpg);
+}
+
+.card-tours__heading {
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  width: 75%;
+  color: var(--color-white);
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.card-tours__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+
+.card-tours__heading-span--1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(var(--color-secondary-rgb), 0.65)), to(rgba(var(--color-secondary-dark-rgb), 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(var(--color-secondary-rgb), 0.65), rgba(var(--color-secondary-dark-rgb), 0.85));
+}
+
+.card-tours__heading-span--2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(var(--color-secondary-rgb), 0.65)), to(rgba(var(--color-secondary-dark-rgb), 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(var(--color-secondary-rgb), 0.65), rgba(var(--color-secondary-dark-rgb), 0.85));
+}
+
+.card-tours__heading-span--3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(var(--color-secondary-rgb), 0.65)), to(rgba(var(--color-secondary-dark-rgb), 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(var(--color-secondary-rgb), 0.65), rgba(var(--color-secondary-dark-rgb), 0.85));
+}
+
+.card-tours__details {
+  padding: 3rem;
+}
+
+.card-tours__details ul {
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.card-tours__details ul li {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card-tours__details ul li:not(:last-child) {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.card-tours__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card-tours__price-box {
+  margin-bottom: 8rem;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.card-tours__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.card-tours__price-value {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
 .row {
   max-width: var(--grid-width);
   margin: 0 auto;
@@ -447,5 +612,10 @@ body {
 .section-about {
   background-color: var(--color-grey-light-1);
   padding: 15rem 0 25rem;
+}
+
+.section-tours {
+  background-color: var(--color-grey-light-1);
+  padding: 10rem 0 25rem;
 }
 /*# sourceMappingURL=main.css.map */
