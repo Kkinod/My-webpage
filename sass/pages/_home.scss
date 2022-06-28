@@ -24,3 +24,29 @@
 		top: 0;
 	}
 }
+
+.section-contact {
+	padding: 15rem 0;
+	// background-image: linear-gradient(to bottom, var(--color-primary-light), var(--color-primary-dark));
+	background-color: var(--color-white);
+}
+
+.contact-box {
+	background-image: linear-gradient(105deg, rgba(var(--color-white-rgb), 0.90) 0%,rgba(var(--color-white-rgb), 0.90) 50%, transparent 50%),
+		url(../img/contactUs-big.jpg);
+	background-size: 100%;
+	border-radius: 1rem;
+	box-shadow: 0 1.5rem 4rem rgba(var(--color-black-rgb), 0.4);
+
+    background-position: center;
+	// background-size: cover;
+	
+
+	height: 50rem;
+	width: 100rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}

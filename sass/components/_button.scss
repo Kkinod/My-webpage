@@ -44,8 +44,19 @@
 		}
 	}
 
-	&:active {
+	&:active,
+	&:focus {
+		outline: none;
 		box-shadow: 0 0.5rem 1rem rgba($color: var(--color-black-rgb), $alpha: 0.3);
 		transform: translateY(0);
 	}
+}
+
+.btn-form {
+	font-size: var(--default-font-size);
+	border: none;
+	padding: .5rem 1rem;
+	border-bottom: 2px solid var(--color-primary);
+	transition: 0.3s;
+	background-color: transparent;
 }

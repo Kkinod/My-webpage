@@ -7,6 +7,7 @@
   --color-secondary-rgb: 181, 139, 91;
   --color-secondary-dark-rgb: 146, 112, 72;
   --color-white: #fff;
+  --color-white-rgb: 255, 255, 255;
   --color-red-light: #c20f45;
   --color-secondary-light: #ffb900;
   --color-secondary-dark: #ff7730;
@@ -166,7 +167,11 @@ body {
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem;
+  margin-bottom: 18rem;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem;
 }
 
 .u-margin-top-big {
@@ -224,11 +229,22 @@ body {
   color: var(--color-white);
 }
 
-.btn-text:active {
+.btn-text:active, .btn-text:focus {
+  outline: none;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(var(--color-black-rgb), 0.3);
           box-shadow: 0 0.5rem 1rem rgba(var(--color-black-rgb), 0.3);
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.btn-form {
+  font-size: var(--default-font-size);
+  border: none;
+  padding: .5rem 1rem;
+  border-bottom: 2px solid var(--color-primary);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: transparent;
 }
 
 .composition {
@@ -550,6 +566,105 @@ body {
   font-weight: 100;
 }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  font-size: var(--default-font-size);
+  font-family: inherit;
+  color: ingherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(var(--color-white-rgb), 0.8);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1rem 2rem rgba(var(--color-black-rgb), 0.3);
+          box-shadow: 0 1rem 2rem rgba(var(--color-black-rgb), 0.3);
+  border-bottom: 3px solid var(--color-primary);
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid var(--color-secondary-dark);
+}
+
+.form__input::-webkit-input-placeholder {
+  color: var(--color-grey-dark-2);
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-group {
+  width: 49%;
+  display: inline-block;
+}
+
+.form__radio-label {
+  font-size: var(--default-font-size);
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem;
+}
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid var(--color-primary);
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -0.4rem;
+}
+
+.form__radio-button::after {
+  content: '';
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: var(--color-primary);
+  opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1;
+}
+
 .review {
   width: 100%;
   margin: 0 auto 10rem;
@@ -735,5 +850,26 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(var(--color-black-rgb), 0.9)), to(transparent));
   background-image: linear-gradient(to bottom, rgba(var(--color-black-rgb), 0.9), transparent);
   top: 0;
+}
+
+.section-contact {
+  padding: 15rem 0;
+  background-color: var(--color-white);
+}
+
+.contact-box {
+  background-image: linear-gradient(105deg, rgba(var(--color-white-rgb), 0.9) 0%, rgba(var(--color-white-rgb), 0.9) 50%, transparent 50%), url(../img/contactUs-big.jpg);
+  background-size: 100%;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(var(--color-black-rgb), 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(var(--color-black-rgb), 0.4);
+  background-position: center;
+  height: 50rem;
+  width: 100rem;
+}
+
+.contact-box__form {
+  width: 50%;
+  padding: 6rem;
 }
 /*# sourceMappingURL=main.css.map */
