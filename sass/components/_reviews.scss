@@ -1,0 +1,64 @@
+.review {
+    // position: relative;
+	width: 100%;
+	margin: 0 auto 10rem;
+	box-shadow: 0 3rem 6rem rgba(var(--color-black-rgb), 0.1);
+	background-color: var(--color-white);
+	border-radius: 1rem;
+	padding: 6rem;
+	padding-left: 9rem;
+	font-size: var(--default-font-size);
+	//Trzeba chyba jednak użyć "float" by móc skorzystać z "shape-outside" - rozwiązać to później
+	display: flex;
+	transform: skewX(-12deg);
+
+    &-box {
+        margin: 0 3.5rem;
+    }
+
+	&__shape {
+		width: 15rem;
+		height: 15rem;
+		// float: left;
+		// shape-outside: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);
+		transform: translateX(-3rem) skewX(12deg);
+		position: relative;
+	}
+
+	&__img {
+		height: 100%;
+        transition: all 0.5s;
+        transform: scale(1.2);
+	}
+
+	&__text {
+		transform: skewX(12deg);
+	}
+
+	&__caption {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 10%);
+		color: var(--color-white);
+		text-transform: uppercase;
+		font-size: var(--default-font-size);
+        font-weight: 700;
+		text-align: center;
+		opacity: 0;
+		transition: all 0.5s;
+        
+	}
+
+	&:hover &__caption {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover &__img {
+		transform: scale(1);
+        filter: blur(3px) brightness(80%);
+        
+	}
+}

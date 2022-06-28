@@ -8,19 +8,29 @@
     <title>Podłogi z historią | Polskie podłogi </title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d85729398b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
 
     <header class="header">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="./img/video/Cutting wood with a miter saw.mp4">
+                <source src="./img/video/Cutting wood with a miter saw.webm">
+                Twoja przeglądarka nie wspiera video!
+            </video>
+        </div>
+
+
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="Logo" class="header__logo">
         </div>
 
         <div class="header__heading-box">
             <h1 class="header__heading-primary">
-                <span class="header__heading-primary--main">Mr. wooden floor </span>
+                <span class="header__heading-primary--main">Mr. woodenfloor </span>
                 <span class="header__heading-primary--second">Drewniane Podłogi to nasza pasja</span>
             </h1>
         </div>
@@ -71,7 +81,7 @@
 
             <div class="row-1-of-2">
                 <div class="col-1-of-2-card card">
-                    <img src="./img/House-big.jpg" alt="" class="card--img">
+                    <img src="./img/House-big.jpg" alt="Room with wooden floor" class="card--img">
                     <div class="card__block">
                         <a href="#" class="card__btn--primary">
                             <h3 class="card-title">
@@ -85,7 +95,7 @@
                     </div>
                 </div>
                 <div class="col-1-of-2-card card">
-                    <img src="./img/Stairs-big.jpg" alt="" class="card--img">
+                    <img src="./img/Stairs-big.jpg" alt="Wooden stairs" class="card--img">
                     <div class="card__block">
                         <a href="#" class="card__btn--primary">
                             <h3 class="card-title">
@@ -116,7 +126,7 @@
                     </div>
                 </div>
                 <div class="col-1-of-2-card card">
-                    <img src="./img/Builders-big.jpg" alt="" class="card--img">
+                    <img src="./img/Builders-big.jpg" alt="Workshop" class="card--img">
                     <div class="card__block">
                         <a href="#" class="card__btn--primary">
                             <h3 class="card-title">
@@ -143,6 +153,7 @@
             <div class="row">
                 <div class="col-1-of-3">
                     <div class="card-tours">
+
                         <div class="card-tours__side card-tours__side--front">
                             <div class="card-tours__picture card-tours__picture--1">
                                 &nbsp;
@@ -150,6 +161,9 @@
                             <h4 class="card-tours__heading">
                                 <span class="card-tours__heading-span card-tours__heading-span--1">Sprawdź ofertę</span>
                             </h4>
+                        </div>
+
+                        <div class="card-tours__side card-tours__side--back card-tours__side--back-1">
                             <div class="card-tours__details">
                                 <ul>
                                     <li>Szybka realizacja</li>
@@ -158,17 +172,11 @@
                                     <li>Unikatowy styl</li>
                                     <li>Najlepsze drewno</li>
                                 </ul>
+                                <a href="#" class="btn-text">Zamów teraz!</a>
                             </div>
                         </div>
-                        <div class="card-tours__side card-tours__side--back card-tours__side--back-1">
-                            <div class="card-tours__cta">
-                                <div class="card-tours__price-box">
-                                    <p class="card-tours__price-only">Tylko</p>
-                                    <p class="card-tours__price-value">1 mln zł</p>
-                                </div>
-                                <a href="#" class="btn btn-text">Zamów teraz!</a>
-                            </div>
-                        </div>
+
+
                     </div>
 
                 </div>
@@ -181,6 +189,9 @@
                             <h4 class="card-tours__heading">
                                 <span class="card-tours__heading-span card-tours__heading-span--2">Sprawdź ofertę</span>
                             </h4>
+                        </div>
+
+                        <div class="card-tours__side card-tours__side--back card-tours__side--back-2">
                             <div class="card-tours__details">
                                 <ul>
                                     <li>Szybka realizacja</li>
@@ -189,15 +200,7 @@
                                     <li>Unikatowy styl</li>
                                     <li>Najlepsze drewno</li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="card-tours__side card-tours__side--back card-tours__side--back-2">
-                            <div class="card-tours__cta">
-                                <div class="card-tours__price-box">
-                                    <p class="card-tours__price-only">Tylko</p>
-                                    <p class="card-tours__price-value">1 mln zł</p>
-                                </div>
-                                <a href="#" class="btn btn-text">Zamów teraz!</a>
+                                <a href="#" class="btn-text">Zamów teraz!</a>
                             </div>
                         </div>
                     </div>
@@ -211,6 +214,9 @@
                             <h4 class="card-tours__heading">
                                 <span class="card-tours__heading-span card-tours__heading-span--3">Sprawdź ofertę</span>
                             </h4>
+                        </div>
+
+                        <div class="card-tours__side card-tours__side--back card-tours__side--back-3">
                             <div class="card-tours__details">
                                 <ul>
                                     <li>Szybka realizacja</li>
@@ -219,23 +225,144 @@
                                     <li>Unikatowy styl</li>
                                     <li>Najlepsze drewno</li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div class="card-tours__side card-tours__side--back card-tours__side--back-3">
-                            <div class="card-tours__cta">
-                                <div class="card-tours__price-box">
-                                    <p class="card-tours__price-only">Tylko</p>
-                                    <p class="card-tours__price-value">1 mln zł</p>
-                                </div>
-                                <a href="#" class="btn btn-text">Zamów teraz!</a>
+                                <a href="#" class="btn-text">Zamów teraz!</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
 
             <div class="u-center-text u-margin-bottom-big">
                 <a href="#" class="btn btn-text">Odkryj całą ofertę</a>
+            </div>
+
+        </section>
+
+        <section class="section-reviews">
+            <div class="section-reviews-shadow"></div>
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Opinie
+                </h2>
+            </div>
+
+
+            <div class="reviews__boxes">
+                <div class="review-box">
+                    <div class="review">
+                        <figure class="review__shape">
+                            <img src="img/kid-small.jpg" alt="Smiling kid" class="review__img">
+                            <figcaption class="review__caption">Jon Doe</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">Zakochałam się w schodach które zrobili w
+                                moim domu</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit
+                                totam
+                                quo iure consequuntur, ut ullam harum assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <div class="review">
+                        <figure class="review__shape">
+                            <img src="img/on2-small.jpg" alt="Man" class="review__img">
+                            <figcaption class="review__caption">Jon Doe</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">Zakochałam się w schodach które zrobili w
+                                moim domu</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit
+                                totam
+                                quo iure consequuntur, ut ullam harum assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <div class="review">
+                        <figure class="review__shape">
+                            <img src="img/on1-small.jpg" alt="Woman" class="review__img">
+                            <figcaption class="review__caption">Jon Doe</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">Zakochałam się w schodach które zrobili w
+                                moim domu</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit
+                                totam
+                                quo iure consequuntur, ut ullam harum assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <div class="review">
+                        <figure class="review__shape">
+                            <img src="img/Woman2-small.jpg" alt="Black woman" class="review__img">
+                            <figcaption class="review__caption">Anna Nowak</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">Zakochałam się w schodach które zrobili w
+                                moim domu</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit
+                                totam
+                                quo iure consequuntur, ut ullam harum assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="reviews__box">
+                    <div class="reviews__box-img">
+                        <img src="./img/on-small.jpg" alt="Jon Doe">
+                    </div>
+                    <div class="reviews__box-info">
+                        <p class="reviews__box-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed? Atque voluptatem
+                            dolore, blanditiis praesentium corporis temporibus nulla sed architecto.
+                        </p>
+                        <strong>Jon Doe</strong>
+                    </div>
+                </div> -->
+
+                <!-- <div class="reviews__box">
+                    <div class="reviews__box-img">
+                        <img src="./img/ona-small.jpg" alt="Mary Smith ">
+                    </div>
+                    <div class="reviews__box-info">
+                        <p class="reviews__box-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed? Atque voluptatem
+                            dolore, blanditiis praesentium corporis temporibus nulla sed architecto.
+                        </p>
+                        <strong>Mary Smith </strong>
+                    </div>
+                </div>
+
+                <div class="reviews__box">
+                    <div class="reviews__box-img">
+                        <img src="./img/babcia-small.jpg" alt="Anna Nowak">
+                    </div>
+                    <div class="reviews__box-info">
+                        <p class="reviews__box-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed? Atque voluptatem
+                            dolore, blanditiis praesentium corporis temporibus nulla sed architecto.
+                        </p>
+                        <strong>Anna Nowak</strong>
+                    </div>
+                </div>
+
+                <div class="reviews__box">
+                    <div class="reviews__box-img">
+                        <img src="./img/dziadek-small.jpg" alt="Jan Kowalski">
+                    </div>
+                    <div class="reviews__box-info">
+                        <p class="reviews__box-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sed? Atque voluptatem
+                            dolore, blanditiis praesentium corporis temporibus nulla sed architecto.
+                        </p>
+                        <strong>Jan Kowalski</strong>
+                    </div>
+                </div> -->
             </div>
 
         </section>
@@ -312,7 +439,11 @@
 
     </section> -->
 
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

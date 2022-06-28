@@ -5,6 +5,8 @@ body {
 }
 
 .heading-secondary {
+	position: relative;
+	z-index: 1;
 	display: inline-block;
 	background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
 	-webkit-background-clip: text;
