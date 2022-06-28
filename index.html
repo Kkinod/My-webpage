@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
         <label for="navi-toggle" class="navigation__button">
@@ -24,11 +23,11 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">Bestsellery</li></a>
+                <li class="navigation__item"><a href="#" class="navigation__link">O Nas</li></a>
                 <li class="navigation__item"><a href="#" class="navigation__link">Współpraca</li></a>
                 <li class="navigation__item"><a href="#" class="navigation__link">Wybrane Projekty</li></a>
-                <li class="navigation__item"><a href="#" class="navigation__link">Opinie Klientów</li></a>
-                <li class="navigation__item"><a href="#" class="navigation__link">Napisz do Nas</li></a>
+                <li class="navigation__item"><a href="#section-reviews" class="navigation__link">Opinie Klientów</li></a>
+                <li class="navigation__item"><a href="#section-contact" class="navigation__link">Napisz do Nas</li></a>
             </ul>
         </nav>
 
@@ -57,10 +56,10 @@
     </header>
 
     <main>
-        <section class="section-about">
+        <section class="section-about" id="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
-                    Bestsellery wśród podłóg na zamówienie
+                    Pomożemy na każdym etapie
                 </h2>
             </div>
 
@@ -162,7 +161,7 @@
             </div>
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
 
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
@@ -192,7 +191,7 @@
                                     <li>Unikatowy styl</li>
                                     <li>Najlepsze drewno</li>
                                 </ul>
-                                <a href="#" class="btn-text">Zamów teraz!</a>
+                                <a href="#popup" class="btn-text">Zamów teraz!</a>
                             </div>
                         </div>
 
@@ -220,7 +219,7 @@
                                     <li>Unikatowy styl</li>
                                     <li>Najlepsze drewno</li>
                                 </ul>
-                                <a href="#" class="btn-text">Zamów teraz!</a>
+                                <a href="#popup" class="btn-text">Zamów teraz!</a>
                             </div>
                         </div>
                     </div>
@@ -245,7 +244,7 @@
                                     <li>Unikatowy styl</li>
                                     <li>Najlepsze drewno</li>
                                 </ul>
-                                <a href="#" class="btn-text">Zamów teraz!</a>
+                                <a href="#popup" class="btn-text">Zamów teraz!</a>
                             </div>
                         </div>
                     </div>
@@ -259,7 +258,7 @@
 
         </section>
 
-        <section class="section-reviews">
+        <section class="section-reviews" id="section-reviews">
             <div class="section-reviews-shadow"></div>
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
@@ -334,7 +333,7 @@
             </div>
         </section>
 
-        <section class="section-contact">
+        <section class="section-contact" id="section-contact">
             <div class="row">
                 <div class="contact-box">
                     <div class="contact-box__form">
@@ -398,11 +397,33 @@
             </div>
             <div class="col-1-of-2 col-copyright">
                 <p class="footer__copyright">
-                    Build by <a href="https://github.com/Kkinod/My-webpage" class="footer__link">Kkinod</a>. Copyright &copy; by Kkinod
+                    Build by <a href="https://github.com/Kkinod/My-webpage" class="footer__link">Kkinod</a>. Copyright
+                    &copy; by Kkinod
                 </p>
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="../img/room3-small.jpg" alt="Room with bed" class="popup__img">
+                <img src="../img/room4-small.jpg" alt="Room" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-margin-bottom-small">Rozpocznij budowę z Nami</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Ważne &ndash; Zapraszamy do zapoznania się z Naszą
+                    ofertą </h3>
+                <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis suscipit
+                    maxime repellat possimus obcaecati magnam ex cumque, excepturi iste? Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Doloribus, qui. Quibusdam quam, labore tempore eos nulla saepe soluta
+                    nemo iure!</p>
+                <div><a href="#" class="btn btn-text">Zarezerwuj termin</a></div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- <section class="grid-test">
 
