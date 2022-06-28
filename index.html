@@ -5,19 +5,436 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natours | Exciting tours for adventurous people</title>
+    <title>Podłogi z historią | Polskie podłogi </title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d85729398b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-<header class="header">
-    
-</header>
+
+    <header class="header">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="./img/video/Cutting wood with a miter saw.mp4">
+                <source src="./img/video/Cutting wood with a miter saw.webm">
+                Twoja przeglądarka nie wspiera video!
+            </video>
+        </div>
+
+        <div class="header__logo-box">
+            <img src="img/logo-white.png" alt="Logo" class="header__logo">
+        </div>
+
+        <div class="header__heading-box">
+            <h1 class="header__heading-primary">
+                <span class="header__heading-primary--main">Mr. woodenfloor </span>
+                <span class="header__heading-primary--second">Drewniane Podłogi to nasza pasja</span>
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Bestsellery wśród podłóg na zamówienie
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <img src="./img/1.jpg" alt="Wood floor 1" class="composition__photo composition__photo--p1">
+                        <img src="./img/2.jpg" alt="Wood floor 2" class="composition__photo composition__photo--p2">
+                        <img src="./img/3.jpg" alt="Wood floor 3" class="composition__photo composition__photo--p3">
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        Pomagamy w doborze
+                    </h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, hic voluptatibus veritatis vero
+                        impedit dolorem minima corrupti omnis itaque quaerat aspernatur aliquam fuga repellendus
+                        pariatur exercitationem sapiente illum excepturi cumque?
+                    </p>
+
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        Specjalizujemy się w drewnie
+                    </h3>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, hic voluptatibus veritatis vero
+                        impedit dolorem minima corrupti omnis itaque quaerat aspernatur aliquam fuga repellendus
+                        pariatur exercitationem sapiente illum excepturi cumque?
+                    </p>
+
+                    <a href="#" class="btn-text">Sprawdź więcej</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-features">
+
+            <div class="row-1-of-2">
+                <div class="col-1-of-2-card card">
+                    <img src="./img/House-big.jpg" alt="Room with wooden floor" class="card--img">
+                    <div class="card__block">
+                        <a href="#" class="card__btn--primary">
+                            <h3 class="card-title">
+                                <small class="card-title--small">
+                                    Zjawiskowe drewniane podłogi i wykończenia
+                                </small>
+                                Klienci Indywidualni
+                            </h3>
+                        </a>
+                        <a href="#" class="card__btn--secondary">Współpracuj z Mr. Wooden</a>
+                    </div>
+                </div>
+                <div class="col-1-of-2-card card">
+                    <img src="./img/Stairs-big.jpg" alt="Wooden stairs" class="card--img">
+                    <div class="card__block">
+                        <a href="#" class="card__btn--primary">
+                            <h3 class="card-title">
+                                <small class="card-title--small">
+                                    Idealne schody i podłogi
+                                </small>
+                                Architekci & Projektanci
+                            </h3>
+                        </a>
+                        <a href="#" class="card__btn--secondary">Unikalna kolekcja schodów Mr. Wooden</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-1-of-2">
+                <div class="col-1-of-2-card card">
+                    <img src="./img/Company-big.jpg" alt="" class="card--img">
+                    <div class="card__block">
+                        <a href="#" class="card__btn--primary">
+                            <h3 class="card-title">
+                                <small class="card-title--small">
+                                    Niezwykłe podłogi z drewna twardego
+                                </small>
+                                Współpraca komercyjna
+                            </h3>
+                        </a>
+                        <a href="#" class="card__btn--secondary">Ogromne możliwości</a>
+                    </div>
+                </div>
+                <div class="col-1-of-2-card card">
+                    <img src="./img/Builders-big.jpg" alt="Workshop" class="card--img">
+                    <div class="card__block">
+                        <a href="#" class="card__btn--primary">
+                            <h3 class="card-title">
+                                <small class="card-title--small">
+                                    Wartość z współpracy z nami
+                                </small>
+                                Deweloperzy & Instalatorzy
+                            </h3>
+                        </a>
+                        <a href="#" class="card__btn--secondary">Partner, któremu możesz zaufać</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-tours">
+
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Wybrane Projekty
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="card-tours">
+
+                        <div class="card-tours__side card-tours__side--front">
+                            <div class="card-tours__picture card-tours__picture--1">
+                                &nbsp;
+                            </div>
+                            <h4 class="card-tours__heading">
+                                <span class="card-tours__heading-span card-tours__heading-span--1">Sprawdź ofertę</span>
+                            </h4>
+                        </div>
+
+                        <div class="card-tours__side card-tours__side--back card-tours__side--back-1">
+                            <div class="card-tours__details">
+                                <ul>
+                                    <li>Szybka realizacja</li>
+                                    <li>Krótkie terminy</li>
+                                    <li>Wysoka jakość materiałów</li>
+                                    <li>Unikatowy styl</li>
+                                    <li>Najlepsze drewno</li>
+                                </ul>
+                                <a href="#" class="btn-text">Zamów teraz!</a>
+                            </div>
+                        </div>
 
 
+                    </div>
 
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card-tours">
+                        <div class="card-tours__side card-tours__side--front">
+                            <div class="card-tours__picture card-tours__picture--2">
+                                &nbsp;
+                            </div>
+                            <h4 class="card-tours__heading">
+                                <span class="card-tours__heading-span card-tours__heading-span--2">Sprawdź ofertę</span>
+                            </h4>
+                        </div>
+
+                        <div class="card-tours__side card-tours__side--back card-tours__side--back-2">
+                            <div class="card-tours__details">
+                                <ul>
+                                    <li>Szybka realizacja</li>
+                                    <li>Krótkie terminy</li>
+                                    <li>Wysoka jakość materiałów</li>
+                                    <li>Unikatowy styl</li>
+                                    <li>Najlepsze drewno</li>
+                                </ul>
+                                <a href="#" class="btn-text">Zamów teraz!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="card-tours">
+                        <div class="card-tours__side card-tours__side--front">
+                            <div class="card-tours__picture card-tours__picture--3">
+                                &nbsp;
+                            </div>
+                            <h4 class="card-tours__heading">
+                                <span class="card-tours__heading-span card-tours__heading-span--3">Sprawdź ofertę</span>
+                            </h4>
+                        </div>
+
+                        <div class="card-tours__side card-tours__side--back card-tours__side--back-3">
+                            <div class="card-tours__details">
+                                <ul>
+                                    <li>Szybka realizacja</li>
+                                    <li>Krótkie terminy</li>
+                                    <li>Wysoka jakość materiałów</li>
+                                    <li>Unikatowy styl</li>
+                                    <li>Najlepsze drewno</li>
+                                </ul>
+                                <a href="#" class="btn-text">Zamów teraz!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="u-center-text u-margin-bottom-big">
+                <a href="#" class="btn btn-text">Odkryj całą ofertę</a>
+            </div>
+
+        </section>
+
+        <section class="section-reviews">
+            <div class="section-reviews-shadow"></div>
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">
+                    Opinie
+                </h2>
+            </div>
+
+            <div class="reviews__boxes">
+                <div class="review-box">
+                    <div class="review">
+                        <figure class="review__shape">
+                            <img src="img/kid-small.jpg" alt="Smiling kid" class="review__img">
+                            <figcaption class="review__caption">Jon Doe</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">Zakochałam się w schodach które zrobili w
+                                moim domu</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit
+                                totam
+                                quo iure consequuntur, ut ullam harum assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <div class="review">
+                        <figure class="review__shape">
+                            <img src="img/on2-small.jpg" alt="Man" class="review__img">
+                            <figcaption class="review__caption">Jon Doe</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">Zakochałam się w schodach które zrobili w
+                                moim domu</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit
+                                totam
+                                quo iure consequuntur, ut ullam harum assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <div class="review">
+                        <figure class="review__shape">
+                            <img src="img/on1-small.jpg" alt="Woman" class="review__img">
+                            <figcaption class="review__caption">Jon Doe</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">Zakochałam się w schodach które zrobili w
+                                moim domu</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit
+                                totam
+                                quo iure consequuntur, ut ullam harum assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-box">
+                    <div class="review">
+                        <figure class="review__shape">
+                            <img src="img/Woman2-small.jpg" alt="Black woman" class="review__img">
+                            <figcaption class="review__caption">Anna Nowak</figcaption>
+                        </figure>
+                        <div class="review__text">
+                            <h3 class="heading-tertiary u-margin-bottom-small">Zakochałam się w schodach które zrobili w
+                                moim domu</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, possimus vitae! Velit
+                                totam
+                                quo iure consequuntur, ut ullam harum assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact">
+            <div class="row">
+                <div class="contact-box">
+                    <div class="contact-box__form">
+                        <form action="#" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Napisz do Nas
+                                </h2>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email adres" id="email" required>
+                                <label for="email" class="form__label">Full name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="individual" name="who">
+                                    <label for="individual" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Klient indywidualny </label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input type="radio" class="form__radio-input" id="business" name="who">
+                                    <label for="business" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Klient biznesowy</label>
+                                </div>
+                            </div>
+
+                            <div class="form__group u-margin-top-medium">
+                                <button class="btn-form btn-text">Do formularza</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- <section class="grid-test">
+
+        <div class="row">
+            <div class="col-1-of-2">
+                Col 1 of 2
+            </div>
+            <div class="col-1-of-2">
+                Col 1 of 2
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">
+                Col 1 of 3
+            </div>
+            <div class="col-1-of-3">
+                Col 1 of 3
+            </div>
+            <div class="col-1-of-3">
+                Col 1 of 3
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">
+                Col 1 of 3
+            </div>
+            <div class="col-2-of-3">
+                Col 2 of 3
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">
+                Col 1 of 4
+            </div>
+            <div class="col-1-of-4">
+                Col 1 of 4
+            </div>
+            <div class="col-1-of-4">
+                Col 1 of 4
+            </div>
+            <div class="col-1-of-4">
+                Col 1 of 4
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">
+                Col 1 of 4
+            </div>
+            <div class="col-1-of-4">
+                Col 1 of 4
+            </div>
+            <div class="col-2-of-4">
+                Col 2 of 4
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">
+                Col 1 of 4
+            </div>
+            <div class="col-3-of-4">
+                Col 3 of 4
+            </div>
+        </div>
+
+    </section> -->
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
