@@ -80,6 +80,7 @@
 			&::after {
 				height: 90%;
 			}
+
 		}
 	}
 
@@ -127,6 +128,8 @@
 	}
 
     &__button:hover {
+
+		
         .navigation__burger-bars::after,
         .navigation__burger-bars::before {
             width: 100%;
