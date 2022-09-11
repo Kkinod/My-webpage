@@ -2,4 +2,4 @@
 
 <a href="https://kkinod.github.io/Webpage-MrWoddenFloor/">LIVE version</a>
 
-02.07 - starting work on RWD
+09.22 - starting work on RWD
