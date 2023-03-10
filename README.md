@@ -5,4 +5,4 @@
 - Site built using SCSS only
 - No RWD yet
 
-==== Przepisane na React
+==== Przepisane na React + Styled Component
