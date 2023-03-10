@@ -6,3 +6,4 @@
 - No RWD yet
 
 ==== Przepisane na React + Styled Component
+- mimo wszystko dodać tutaj RWD
