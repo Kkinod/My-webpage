@@ -6,4 +6,4 @@
 - No RWD yet
 
 ==== Prescribed for React + Styled Component
-
+- to add RWD!
