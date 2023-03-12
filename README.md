@@ -5,5 +5,5 @@
 - Site built using SCSS only
 - No RWD yet
 
-==== Przepisane na React + Styled Component
-- mimo wszystko dodać tutaj RWD
+==== Prescribed for React + Styled Component
+
