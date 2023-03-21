@@ -6,4 +6,6 @@ Mr. WoddenFloor
 - No RWD yet
 
 ==== Prescribed for React + Styled Component
-- to add RWD!
+To add: 
+- RWD!
+- tests
