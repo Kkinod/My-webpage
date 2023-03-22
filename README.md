@@ -1,5 +1,4 @@
 Mr. WoddenFloor
-Live:
 
 <a href="https://kkinod.github.io/Webpage-MrWoddenFloor/">LIVE version</a>
 
