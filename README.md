@@ -7,6 +7,7 @@ Nie działa w trybie prywatny, ustawić później ja ponownie:
 - Site built using SCSS only
 - No RWD yet
 
+
 ==== Prescribed for React + Styled Component
 To add: 
 - RWD!
