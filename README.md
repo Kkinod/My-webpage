@@ -1,5 +1,6 @@
 Mr. WoddenFloor
 
+
 Nie działa w trybie prywatny, ustawić później ja ponownie:
 
 <a href="https://kkinod.github.io/Webpage-MrWoddenFloor/">LIVE version</a>
