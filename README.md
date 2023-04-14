@@ -1,7 +1,7 @@
 Mr. WoddenFloor
 
 
-Nie działa w trybie prywatny, ustawić później ja ponownie:
+Strona nie działa w trybie prywatnym, ustawić później ją ponownie:
 
 <a href="https://kkinod.github.io/Webpage-MrWoddenFloor/">LIVE version</a>
 
